@@ -2,21 +2,26 @@ import React from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
+
 class Square extends React.Component {
-  render() {
-    return <button className="square">{/* TODO */}</button>;
+  render(){
+    return (
+      <button className="square">
+        {/* TODO */}
+      </button>
+    )
   }
 }
 
-class Board extends React.Component {
-  renderSquare(i) {
+class Box extends React.Component {
+  renderSquare(i){
     return <Square />;
   }
 
-  render() {
-    const status = "Next player: X";
+  render(){
+    const status = "Next Player: X";
 
-    return (
+    return(
       <div>
         <div className="status">{status}</div>
         <div className="board-row">
@@ -35,25 +40,27 @@ class Board extends React.Component {
           {this.renderSquare(8)}
         </div>
       </div>
-    );
+    )
   }
 }
 
 class Game extends React.Component {
   render() {
-    return (
+    return(
       <div className="game">
         <div className="game-board">
-          <Board />
+          <Box />
         </div>
         <div className="game-info">
           <div>{/* status */}</div>
-          <ol>{/* TODO */}</ol>
-        </div>
+            <ol>{/* TODO */}</ol>
+          </div>
       </div>
     );
   }
 }
+
+
 
 // ========================================
 
