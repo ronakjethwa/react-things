@@ -7,11 +7,15 @@ class App extends Component{
   }
 
   state = {
-    addresses : [],
+    characters: [],
+  };
+
+  handleSubmit = (character) => {
+    this.setState({ characters: [...this.state.characters, character] });
   };
 
   render(){
-    const { addresses } = this.state;
+    const { characters } = this.state;
 
     return (
       <div className="container">

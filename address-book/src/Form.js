@@ -24,13 +24,14 @@ class Form extends Component {
 
   onFormSubmit = (event) => {
     event.preventDefault();
-    
+
     this.props.handleSubmit(this.state);
     this.setState(this.initialState);
   };
 
   render() {
     const { name, addressline, city, country } = this.state;
+    
     return (
       <form onSubmit={this.onFormSubmit}>
         <label htmlFor="name">Name</label>
