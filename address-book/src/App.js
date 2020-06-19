@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-
+import './Form';
 class App extends Component{
   
   constructor(props){
@@ -16,6 +16,7 @@ class App extends Component{
     return (
       <div className="container">
         <h1>Address Book</h1>
+        <Form handleSubmit={this.handleSubmit} />
       </div>
     )
   }
