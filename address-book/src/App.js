@@ -1,9 +1,8 @@
 import React, { Component } from "react";
-import Form from './Form'
+import Form from "./Form";
 import Table from "./Table";
-class App extends Component{
-  
-  constructor(props){
+class App extends Component {
+  constructor(props) {
     super(props);
   }
 
@@ -11,11 +10,21 @@ class App extends Component{
     characters: [],
   };
 
+  removeCharacter = (index) => {
+    const { characters } = this.state;
+
+    this.setState({
+      characters: characters.filter((character, i) => {
+        return i !== index;
+      }),
+    });
+  };
+
   handleSubmit = (character) => {
     this.setState({ characters: [...this.state.characters, character] });
   };
 
-  render(){
+  render() {
     const { characters } = this.state;
 
     return (
@@ -27,9 +36,8 @@ class App extends Component{
           removeCharacter={this.removeCharacter}
         />
       </div>
-    )
+    );
   }
-
 }
 
 export default App;
