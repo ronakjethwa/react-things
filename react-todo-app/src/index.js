@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import "./index.css";
 
-class TodoApp extends React.Component {
+class TodoApp extends Component {
   constructor(props) {
     super(props);
     this.state = { items: [], text: "", id: "" };
@@ -60,7 +60,7 @@ class TodoApp extends React.Component {
   }
 }
 
-class Tasks extends React.Component {
+class Tasks extends Component {
   render() {
     return (
       <div>
