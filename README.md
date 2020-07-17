@@ -1,4 +1,4 @@
-# React Projects
+## React Projects
 
 
 - Employee Directory
@@ -7,7 +7,7 @@
 - Todo App
 
 
-# Build & Run
+## Build & Run
 ```js
 npm install && npm start
 ```
