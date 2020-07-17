@@ -75,4 +75,4 @@ class Tasks extends React.Component {
   }
 }
 
-ReactDOM.render(<TodoApp />, document.getElementById("app"));
+ReactDOM.render(<TodoApp />, document.getElementById("root"));
