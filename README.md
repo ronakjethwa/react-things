@@ -5,6 +5,7 @@
 - Address Book
 - Tic Tac Toe
 - Todo App
+- React Simple Calculator
 
 
 ## Build & Run
