@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import KeyPad from './components/KeyPad'
+import KeyPad from './components/KeyPad';
+import './App.css';
 
 class App extends Component{
   constructor(props){
