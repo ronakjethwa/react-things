@@ -34,18 +34,13 @@ class App extends Component {
       checkResult = this.state.result;
     }
 
-    try {
-      this.setState({
-        // eval() is dangerous, but gets the job done here quickly
-        // do not use eval() in production code, please!
-        // eslint-disable-next-line
-        result: (eval(checkResult) || "") + "",
-      });
-    } catch (e) {
-      this.setState({
-        result: "error",
-      });
-    }
+
+    this.setState({
+      // eval() simply gets the job done quickly here!
+      // do not use eval() in production code
+      // eslint-disable-next-line
+      result : eval(checkResult),
+    })
   };
 
   reset = () => {
