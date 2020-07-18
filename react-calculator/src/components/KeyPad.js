@@ -3,7 +3,7 @@ import React, { Component } from "react";
 class KeyPad extends Component {
   render() {
     return (
-      <div>
+      <div className="button">
         <button>(</button>
         <button>CE</button>
         <button>)</button>
