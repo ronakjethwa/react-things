@@ -36,6 +36,7 @@ class App extends Component {
 
     try {
       this.setState({
+        // eval() is dangerous, but gets the job done here quickly
         // eslint-disable-next-line
         result: (eval(checkResult) || "") + "",
       });
