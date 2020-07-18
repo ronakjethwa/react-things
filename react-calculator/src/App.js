@@ -39,7 +39,7 @@ class App extends Component {
       // eval() simply gets the job done quickly here!
       // do not use eval() in production code
       // eslint-disable-next-line
-      result : eval(checkResult),
+      result : eval(checkResult) + '',
     })
   };
 
