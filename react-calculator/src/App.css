@@ -6,13 +6,10 @@
 }
 
 .result p {
-  font-size: 40px;
-  margin: 5px;
-}
-
-.calculator-body {
-  max-width: 400px;
-  margin: auto;
+  font-size: 36px;
+  line-height: 50px;
+  margin: 5px 10px;
+  float: right;
 }
 
 .button {

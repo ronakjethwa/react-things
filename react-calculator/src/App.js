@@ -60,7 +60,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="calculator-body">
+      <div>
         <h2>React Calculator</h2>
         <Result result={this.state.result} />
         <KeyPad onClick={this.onClick} />
