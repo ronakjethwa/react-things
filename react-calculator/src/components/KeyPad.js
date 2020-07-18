@@ -22,7 +22,7 @@ class KeyPad extends Component {
         <button>7</button>
         <button>8</button>
         <button>9</button>
-        <button>X</button>
+        <button>x</button>
 
         <button>.</button>
         <button>0</button>
