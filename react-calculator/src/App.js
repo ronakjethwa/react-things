@@ -27,13 +27,12 @@ class App extends Component {
   };
 
   calculate = () => {
-    var checkResult = "";
+    const checkResult = "";
     if (this.state.result.includes("--")) {
       checkResult = this.state.result.replace("--", "+");
     } else {
       checkResult = this.state.result;
     }
-
 
     this.setState({
       // eval() simply gets the job done quickly here!
