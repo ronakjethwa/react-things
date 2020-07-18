@@ -1,15 +1,6 @@
-import React, { Component } from "react";
-import ReactDOM from "react-dom";
-import "./index.css";
-
-class App extends Component{
-  constructor(props){
-    super(props);
-  }
-
-  render(){
-    return null;
-  }
-}
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App';
 
 ReactDOM.render(<App />, document.getElementById("root"));
